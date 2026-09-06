@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>City HUD</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="hud" class="hud">
+    <section class="identity glass">
+      <div class="brand"><span class="brand-dot"></span><span>CITY</span><small>ROLEPLAY</small></div>
+      <div class="identity-row">
+        <div class="avatar" id="avatar">P</div>
+        <div class="player-copy"><strong id="playerName">Player</strong><span>ID <b id="playerId">0</b></span></div>
+        <div class="voice" id="voice"><i></i><span>VOICE</span></div>
+      </div>
+      <div class="bars">
+        <div class="stat"><span>HP</span><div><em id="healthBar"></em></div><b id="healthValue">100</b></div>
+        <div class="stat"><span>ARM</span><div><em id="armorBar"></em></div><b id="armorValue">0</b></div>
+        <div class="stat"><span>STA</span><div><em id="staminaBar"></em></div><b id="staminaValue">100</b></div>
+      </div>
+      <div class="server-row"><span id="serverName">FiveM Server</span><span><b id="playerCount">0</b>/<span id="maxPlayers">48</span> ONLINE</span></div>
+    </section>
+
+    <section id="carHud" class="car glass hidden">
+      <div class="car-top"><span id="gear">N</span><div class="speed"><strong id="speed">0</strong><small>KM/H</small></div><div class="car-meta"><span>HEADING <b id="heading">0°</b></span><span>FUEL <b id="fuel">100%</b></span></div></div>
+      <div class="car-bottom"><div class="rpm"><span>RPM</span><div><em id="rpmBar"></em></div></div><div class="mini"><i class="engine on" id="engine"></i><span>ENGINE</span></div><div class="mini"><i id="belt"></i><span>BELT</span></div></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
